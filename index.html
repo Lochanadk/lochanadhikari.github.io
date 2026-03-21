@@ -1,0 +1,166 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lochan Adhikari</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"><style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0f1a;
+color:#fff;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+display:flex;
+justify-content:space-between;
+padding:15px 20px;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(12px);
+z-index:1000;
+}
+
+header h1{
+font-size:18px;
+}
+
+nav a{
+margin-left:15px;
+color:#ccc;
+text-decoration:none;
+font-size:14px;
+}
+
+nav a:hover{
+color:#fff;
+}
+
+section{
+padding:80px 20px;
+text-align:center;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:radial-gradient(circle at top,#1e293b,#020617);
+animation:fadeIn 2s ease;
+}
+
+.hero img{
+width:140px;
+height:140px;
+border-radius:50%;
+border:3px solid #38bdf8;
+box-shadow:0 0 30px #38bdf8;
+margin-bottom:15px;
+}
+
+.hero h2{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.hero p{
+opacity:0.7;
+}
+
+.social a{
+margin:10px;
+font-size:22px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.social a:hover{
+transform:scale(1.2);
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:10px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+img,video{
+width:100%;
+border-radius:10px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+opacity:0.6;
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+@media(max-width:600px){
+.grid{
+grid-template-columns:1fr;
+}
+}
+</style></head><body><header>
+<h1>Lochan</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#photos">Photos</a>
+<a href="#reels">Reels</a>
+<a href="#contact">Contact</a>
+</nav>
+</header><section class="hero">
+<img src="images/profile.jpg">
+<h2>Hi, I'm Lochan 👋</h2>
+<p>Content Creator • Reels • Memes • Travel</p><div class="social">
+<a href="https://www.facebook.com/share/1DZRXhxvLU/">🌐</a>
+<a href="https://www.instagram.com/lochan_adhikari1">📸</a>
+<a href="https://www.tiktok.com/@lochan069">🎵</a>
+<a href="https://wa.me/9779803278899">💬</a>
+</div>
+</section><section id="photos">
+<h2>Photos</h2>
+<div class="grid">
+<div class="card"><img src="images/photo1.jpg"></div>
+<div class="card"><img src="images/photo2.jpg"></div>
+</div>
+</section><section id="reels">
+<h2>Reels</h2>
+<div class="grid">
+<div class="card"><video controls src="videos/reel1.mp4"></video></div>
+<div class="card"><video controls src="videos/reel2.mp4"></video></div>
+</div>
+</section><section id="contact">
+<h2>Contact</h2>
+<p>Email: info.tribikram@gmail.com</p>
+<p>📍 Nepal & South Africa</p>
+<p>📱 +9779803278899 / +243828085706</p>
+</section><footer>
+© 2026 Lochan Adhikari
+</footer></body>
+</html>
