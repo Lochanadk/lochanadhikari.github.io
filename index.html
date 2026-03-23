@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lochan Adhikari</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{
+background:linear-gradient(180deg,#fff3b0,#ffe066);
+color:#111;
+}
+
+/* HEADER */
+header{
+position:sticky;top:0;z-index:1000;
+background:#ffd84d;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:14px 20px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo{font-size:20px;font-weight:700;}
+
+.menu-btn{font-size:22px;cursor:pointer;}
+
+nav{
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav a{
+text-decoration:none;
+color:#111;
+font-weight:600;
+font-size:14px;
+padding:6px 10px;
+border-radius:20px;
+}
+
+nav a:hover{
+background:#111;
+color:#fff;
+}
+
+#mobileMenu{
+display:none;
+background:#ffd84d;
+padding:10px;
+}
+
+/* LANG */
+.lang{
+position:fixed;
+top:10px;
+right:10px;
+background:#111;
+color:#fff;
+padding:6px 12px;
+border-radius:8px;
+font-size:13px;
+cursor:pointer;
+z-index:999;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:16px;
+}
+
+/* HERO */
+.hero{text-align:center;padding:60px 10px;}
+.hero img{
+width:150px;height:150px;border-radius:50%;
+object-fit:cover;border:5px solid #fff;
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+.hero h1{font-size:28px;margin-top:14px;}
+.hero p{color:#444;}
+
+/* SOCIAL */
+.social{display:flex;justify-content:center;gap:18px;margin-top:18px;}
+.social a{
+width:45px;height:45px;border-radius:50%;
+display:flex;align-items:center;justify-content:center;
+background:#111;color:#fff;font-size:18px;
+}
+
+/* SECTION */
+.section{
+margin-top:30px;background:#fff;
+padding:20px;border-radius:16px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+.section h2{
+font-size:20px;margin-bottom:15px;
+border-left:5px solid #ffd84d;padding-left:10px;
+}
+
+/* COLLAGE */
+.collage{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
+.collage img{width:100%;height:110px;object-fit:cover;border-radius:10px;}
+
+/* VIDEO */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;}
+.grid video{width:100%;border-radius:12px;}
+
+/* SHARE */
+.share{
+margin-top:10px;
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+.share a{
+color:#fff;
+padding:8px 12px;
+border-radius:20px;
+font-size:14px;
+text-decoration:none;
+}
+
+/* FORM */
+input, textarea{
+width:100%;
+padding:10px;
+margin:6px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.button{
+display:inline-block;
+margin-top:10px;
+padding:10px 18px;
+background:#111;
+color:#fff;
+border-radius:25px;
+text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+margin-top:30px;
+padding:15px;
+font-size:12px;
+color:#555;
+}
+
+@media(max-width:600px){
+.grid{grid-template-columns:1fr;}
+.collage{grid-template-columns:repeat(2,1fr);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="lang" onclick="toggleLang()">NP | EN</div>
+
+<header>
+<div class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+<div class="logo">LOCHAN</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#photos">Photos</a>
+<a href="#reels">Reels</a>
+<a href="#daily">Daily</a>
+<a href="#politics">Politics</a>
+<a href="#memes">Memes</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div id="mobileMenu">
+<a href="#home">Home</a><br>
+<a href="#photos">Photos</a><br>
+<a href="#reels">Reels</a><br>
+<a href="#daily">Daily</a><br>
+<a href="#politics">Politics</a><br>
+<a href="#memes">Memes</a><br>
+<a href="#contact">Contact</a>
+</div>
+
+<div class="container">
+
+<!-- HERO -->
+<section class="hero" id="home">
+<img src="images/profile.jpg">
+<h1>Lochan Adhikari</h1>
+<p>Content Creator • Travel • Reels • Memes</p>
+
+<div class="social">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-tiktok"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+</div>
+</section>
+
+<!-- PHOTOS -->
+<section class="section" id="photos">
+<h2>My Pictures</h2>
+<div class="collage">
+<img src="images/photo1.jpg">
+<img src="images/photo2.jpg">
+<img src="images/photo3.png">
+<img src="images/photo4.jpg">
+<img src="images/photo5.jpg">
+</div>
+</section>
+
+<!-- REELS -->
+<section class="section" id="reels">
+<h2>Reels & Videos</h2>
+<div class="grid">
+<video controls src="videos/reel1.mp4"></video>
+<video controls src="videos/reel2.mp4"></video>
+</div>
+</section>
+
+<!-- POLITICS -->
+<section class="section" id="politics">
+<h2>Politics</h2>
+
+<img src="images/photo3.png">
+
+<h3>US Dollar Rises Against Nepalese Rupee</h3>
+<p>By Lochan Adhikari | March 22, 2026</p>
+
+<p>The exchange rate reached 1 USD = 149.32 NPR amid global pressure.</p>
+
+<div class="share">
+<a href="#" style="background:#1877f2;"><i class="fab fa-facebook-f"></i></a>
+<a href="#" style="background:#25d366;"><i class="fab fa-whatsapp"></i></a>
+<a href="#" style="background:#000;"><i class="fab fa-x-twitter"></i></a>
+</div>
+
+</section>
+
+<!-- MEMES -->
+<section class="section" id="memes">
+<h2>Memes</h2>
+<div class="collage">
+<img src="images/meme1.jpg">
+<img src="images/meme2.jpg">
+<img src="images/meme3.jpg">
+</div>
+</section>
+
+<!-- RSP -->
+<section class="section">
+<h2>Join RSP – Palpa</h2>
+<input type="text" placeholder="First Name">
+<input type="text" placeholder="Surname">
+<input type="email" placeholder="Email">
+<a class="button">Register</a>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+<h2>Contact Me</h2>
+
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea placeholder="Your Message"></textarea>
+
+<a class="button">Send Message</a>
+
+<p>Email: info.tribikram@gmail.com</p>
+<p>Phone: +9779803278899</p>
+<p>Location: Pretoria, South Africa</p>
+</section>
+
+<!-- DONATE -->
+<section class="section">
+<h2>Donate Me</h2>
+<p>eSewa: +9779803278899</p>
+<a href="https://esewa.com.np" class="button">Donate via eSewa</a>
+</section>
+
+<footer>
+© 2026 Lochan Adhikari. All rights reserved.
+</footer>
+
+</div>
+
+<script>
+function toggleMenu(){
+let m=document.getElementById("mobileMenu");
+m.style.display = m.style.display==="block"?"none":"block";
+}
+
+function toggleLang(){
+alert("Translation coming soon");
+}
+</script>
+
+</body>
+</html>
